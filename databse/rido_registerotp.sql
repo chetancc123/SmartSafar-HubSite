@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+--
+-- Host: localhost    Database: rido
+-- ------------------------------------------------------
+-- Server version	8.0.33
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `registerotp`
+--
+
+DROP TABLE IF EXISTS `registerotp`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `registerotp` (
+  `registermanage_otp_id` bigint NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone_no` varchar(255) DEFAULT NULL,
+  `register_email_otp` varchar(255) DEFAULT NULL,
+  `register_phone_otp` varchar(255) DEFAULT NULL,
+  `timestamp` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`registermanage_otp_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `registerotp`
+--
+
+LOCK TABLES `registerotp` WRITE;
+/*!40000 ALTER TABLE `registerotp` DISABLE KEYS */;
+INSERT INTO `registerotp` VALUES (1,'shiv123@gmail.com','+916266180866','3730','7462',NULL),(2,'ash123@gmail.com','123456789091','3318','9788',NULL),(52,'fake123@gmail.com','12345678919','2686','6243',NULL),(102,'Raja123@gmail.com','12345678926','7400','5949',NULL),(103,'Ramu123@gmail.com','123456789092','3276','5610',NULL),(152,NULL,'5678754567',NULL,'1958','2024-05-15 10:56:39.229459'),(153,NULL,NULL,NULL,'7663','2024-05-15 10:58:55.307342'),(202,'de@example.com',NULL,'3827',NULL,'2024-05-15 11:01:35.000237'),(203,NULL,'987654321',NULL,'5006','2024-05-15 11:02:46.229321'),(204,NULL,'+916268170294',NULL,'1360','2024-05-15 11:03:21.872617'),(205,NULL,'+919927335197',NULL,'8965','2024-05-15 11:06:06.716171'),(252,'yashwant@gmail.com',NULL,'9505',NULL,'2024-05-28 10:18:21.140820'),(253,NULL,'+91 9927335197',NULL,'2990','2024-05-28 10:17:09.767156'),(302,'y@gmail.com',NULL,'9046',NULL,'2024-05-28 10:19:35.826611');
+/*!40000 ALTER TABLE `registerotp` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-06-13 12:08:44
